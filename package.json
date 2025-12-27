@@ -1,7 +1,7 @@
 {
   "name": "vite_react_shadcn_ts",
   "private": true,
-  "homepage": "https://neshomago.github.io/Neshomago/drawing-lifes",
+  "homepage": "https://neshomago.github.io/drawing-lifes",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
