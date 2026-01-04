@@ -2,6 +2,7 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import CartSheet, { CartItem } from "./CartSheet";
+import { HashLink } from 'react-router-hash-link';
 
 import logo from "@/assets/logo.jpg";
 import slogan from "@/assets/2.png";
@@ -27,9 +28,10 @@ const Header = ({ cartItems, onUpdateQuantity, onRemoveItem }: HeaderProps) => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#gallery" className="text-foreground hover:text-primary transition-colors font-medium">
+          <HashLink smooth to="/#gallery"
+          className="text-foreground hover:text-primary transition-colors font-medium">
             Galería
-          </a>
+          </HashLink>
           <a href="#categories" className="text-foreground hover:text-primary transition-colors font-medium">
             Categorías
           </a>

@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg-ok.jpg";
 import bgWave from "@/assets/bg.png";
+import { HashLink } from 'react-router-hash-link';
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${bgWave})` }}
+        style={{ backgroundImage: `url(${heroBg})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/50" />
       </div>
@@ -20,11 +21,11 @@ const Hero = () => {
           Descubre Arte Increíble
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-5 duration-700 delay-150">
-          Explora ilustraciones únicas y fan art de creadores talentosos de todo el mundo
+          Explora ilustraciones únicas y fan arts de artistas talentosos alrededor del mundo.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">
           <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-accent to-secondary hover:opacity-90 transition-opacity">
-            <a href="#gallery">Ver Galería</a>
+            <HashLink smooth to="/#gallery">Ver Galería</HashLink>
           </Button>
           <Button size="lg" variant="outline" className="text-lg px-8 border-2">
             <ShoppingCart className="mr-2 h-5 w-5" />

@@ -16,17 +16,19 @@ import sample4 from "@/assets/sample-4.jpg";
 import sample5 from "@/assets/sample-5.jpg";
 import sample6 from "@/assets/sample-6.jpg";
 import sample7 from "@/assets/sample-7.jpg";
+import sample8 from "@/assets/sample-8.jpg";
 import logo from "@/assets/logo.jpg";
 import slogan from "@/assets/2.png";
 
 const products = [
   { id: 1, title: "Pokemon Charmander", artist: "SakuraArt", price: 45, image: sample1, category: "Fan Art" },
-  { id: 2, title: "Vector Spiderman", artist: "ModernMinds", price: 35, image: sample2, category: "Estilo Cómic" },
+  { id: 2, title: "Spiderman", artist: "ModernMinds", price: 35, image: sample8, category: "Estilo Cómic" },
   { id: 3, title: "Tom y Jerry", artist: "CloudNine", price: 65, image: sample3, category: "Paisajes" },
   { id: 4, title: "Tom Feliz", artist: "CuteCreations", price: 40, image: sample4, category: "Diseño de Personajes" },
   { id: 5, title: "Poster contra Bullying", artist: "FanArtist99", price: 55, image: sample5, category: "Fan Art" },
   { id: 6, title: "Pokemon Mudkip", artist: "ComicPro", price: 50, image: sample6, category: "Abstracto" },
-  { id: 7, title: "Pokemon Squirtle", artist: "ComicPro", price: 50, image: sample6, category: "Abstracto" },
+  { id: 7, title: "Pokemon Squirtle", artist: "ComicPro", price: 50, image: sample7, category: "Abstracto" },
+  { id: 8, title: "Spiderman", artist: "ComicPro", price: 50, image: sample2, category: "Abstracto" },
 ];
 
 const Index = () => {
