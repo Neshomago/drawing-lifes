@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import CartSheet, { CartItem } from "./CartSheet";
 import { HashLink } from 'react-router-hash-link';
+import DialogExample from "./Dialog";
 
 import logo from "@/assets/logo.jpg";
 import slogan from "@/assets/2.png";
@@ -32,15 +33,13 @@ const Header = ({ cartItems, onUpdateQuantity, onRemoveItem }: HeaderProps) => {
           className="text-foreground hover:text-primary transition-colors font-medium">
             Galería
           </HashLink>
-          <a href="#categories" className="text-foreground hover:text-primary transition-colors font-medium">
+          <HashLink smooth to="/#categories" className="text-foreground hover:text-primary transition-colors font-medium">
             Categorías
-          </a>
-          <a href="#custom" className="text-foreground hover:text-primary transition-colors font-medium">
-            Logo Personalizado
-          </a>
-          <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
+          </HashLink>
+          <DialogExample />
+          <HashLink smooth to="/#about" className="text-foreground hover:text-primary transition-colors font-medium">
             Acerca de
-          </a>
+          </HashLink>
         </nav>
 
         {/* Cart Button */}

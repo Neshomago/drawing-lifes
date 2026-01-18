@@ -19,16 +19,17 @@ import sample7 from "@/assets/sample-7.jpg";
 import sample8 from "@/assets/sample-8.jpg";
 import logo from "@/assets/logo.jpg";
 import slogan from "@/assets/2.png";
+import splash from "@/assets/bgcolor-splash.png";
 
 const products = [
-  { id: 1, title: "Pokemon Charmander", artist: "SakuraArt", price: 45, image: sample1, category: "Fan Art" },
-  { id: 2, title: "Spiderman", artist: "ModernMinds", price: 35, image: sample8, category: "Estilo Cómic" },
-  { id: 3, title: "Tom y Jerry", artist: "CloudNine", price: 65, image: sample3, category: "Paisajes" },
-  { id: 4, title: "Tom Feliz", artist: "CuteCreations", price: 40, image: sample4, category: "Diseño de Personajes" },
-  { id: 5, title: "Poster contra Bullying", artist: "FanArtist99", price: 55, image: sample5, category: "Fan Art" },
-  { id: 6, title: "Pokemon Mudkip", artist: "ComicPro", price: 50, image: sample6, category: "Abstracto" },
-  { id: 7, title: "Pokemon Squirtle", artist: "ComicPro", price: 50, image: sample7, category: "Abstracto" },
-  { id: 8, title: "Spiderman", artist: "ComicPro", price: 50, image: sample2, category: "Abstracto" },
+  { id: 1, title: "Pokemon Charmander", artist: "Zacktnt40", price: 15, image: sample1, category: "Fan Art" },
+  { id: 2, title: "Spiderman", artist: "DarkFox17", price: 10, image: sample8, category: "Estilo Cómic" },
+  { id: 3, title: "Tom y Jerry", artist: "DarkFox17", price: 8, image: sample3, category: "Paisajes" },
+  { id: 4, title: "Tom Feliz", artist: "Zacktnt40", price: 12, image: sample4, category: "Diseño de Personajes" },
+  { id: 5, title: "Cartel Publicitario", artist: "DarkFox17", price: 15, image: sample5, category: "Fan Art" },
+  { id: 6, title: "Pokemon Mudkip", artist: "Zacktnt40", price: 15, image: sample6, category: "Abstracto" },
+  { id: 7, title: "Pokemon Squirtle", artist: "DarkFox17", price: 15, image: sample7, category: "Abstracto" },
+  { id: 8, title: "Spiderman", artist: "Zacktnt40", price: 15, image: sample2, category: "Abstracto" },
 ];
 
 const Index = () => {
@@ -94,10 +95,10 @@ const Index = () => {
       />
       <Hero />
       <WhatsAppFloatButton />
-      
+
       <CustomLogoCTA />
       
-      <main className="container mx-auto px-6 py-12" id="gallery">
+      <main className="container mx-auto px-6 py-12" id="categories">
         <div className="flex flex-col lg:flex-row gap-8">
           <FilterSidebar 
             selectedCategories={selectedCategories}
@@ -106,7 +107,7 @@ const Index = () => {
             onPriceChange={setPriceRange}
           />
           
-          <div className="flex-1">
+          <div className="flex-1" id="gallery">
             <div className="mb-8">
               <h2 className="text-3xl font-bold text-foreground mb-2">Ilustraciones Destacadas</h2>
               <p className="text-muted-foreground">
@@ -130,7 +131,27 @@ const Index = () => {
         </div>
       </main>
 
-      <footer className="border-t border-border bg-muted/30 mt-20">
+      <main className="w-full" id="about">
+        <section className="mx-auto px-4 py-12 text-gray-800 flex flex-row items-center bg-gradient-to-t from-white to-accent">
+          <div className="w-8/12">
+            <h2 className="text-3xl font-bold text-foreground mb-2">Acerca de Drawing Lifes</h2>
+            <p className="text-base mb-4 leading-loose">
+              En <span className="font-semibold italic text-gray-600">Drawing Lifes</span> creemos que el arte es una forma poderosa de expresión y conexión. Somos un espacio donde la creatividad no tiene límites y donde cada ilustración cuenta una historia única. Nuestro objetivo es acercarte al talento de artistas de todo el mundo y ofrecerte obras que inspiran, emocionan y destacan por su originalidad.
+            </p>
+            <p className="text-base mb-4 leading-loose">
+              Además, en <span className="font-semibold italic text-gray-600">Drawing Lifes</span> no solo descubres arte: lo creamos contigo. Trabajamos directamente con nuestros artistas para desarrollar ilustraciones y logos personalizados que representen fielmente la esencia de tu marca. Creemos en la colaboración cercana para transformar ideas en imágenes que comuniquen identidad, personalidad y propósito.
+            </p>
+            <p className="text-base mb-4 leading-loose">
+              Somos tu destino para ilustraciones únicas y arte hecho a medida. En cada trazo ponemos dedicación, creatividad y compromiso, porque sabemos que cada proyecto es especial.
+            </p>
+          </div>
+          <div>
+            <img src={splash} width={500}/>
+          </div>
+        </section>
+      </main>
+
+      <footer className="border-t border-border bg-muted/30">
         <div className="container mx-auto px-6 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>

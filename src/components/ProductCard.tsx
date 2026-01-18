@@ -59,7 +59,7 @@ const ProductCard = ({ id, title, artist, price, image, category, onAddToCart }:
         <h3 className="font-semibold text-lg mb-1 text-foreground line-clamp-1">{title}</h3>
         <p className="text-sm text-muted-foreground mb-3">by {artist}</p>
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <span className="text-2xl font-bold bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
             ${price}
           </span>
         </div>
