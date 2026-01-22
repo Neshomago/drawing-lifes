@@ -23,13 +23,13 @@ import splash from "@/assets/bgcolor-splash.png";
 
 const products = [
   { id: 1, title: "Pokemon Charmander", artist: "Zacktnt40", price: 15, image: sample1, category: "Fan Art" },
-  { id: 2, title: "Spiderman", artist: "DarkFox17", price: 10, image: sample8, category: "Estilo Cómic" },
-  { id: 3, title: "Tom y Jerry", artist: "DarkFox17", price: 8, image: sample3, category: "Paisajes" },
-  { id: 4, title: "Tom Feliz", artist: "Zacktnt40", price: 12, image: sample4, category: "Diseño de Personajes" },
-  { id: 5, title: "Cartel Publicitario", artist: "DarkFox17", price: 15, image: sample5, category: "Fan Art" },
-  { id: 6, title: "Pokemon Mudkip", artist: "Zacktnt40", price: 15, image: sample6, category: "Abstracto" },
-  { id: 7, title: "Pokemon Squirtle", artist: "DarkFox17", price: 15, image: sample7, category: "Abstracto" },
-  { id: 8, title: "Spiderman", artist: "Zacktnt40", price: 15, image: sample2, category: "Abstracto" },
+  { id: 2, title: "Spiderman", artist: "DarkFox17", price: 35, image: sample8, category: "Estilo Cómic" },
+  { id: 3, title: "Tom y Jerry", artist: "DarkFox17", price: 20, image: sample3, category: "Paisajes" },
+  { id: 4, title: "Tom Feliz", artist: "Zacktnt40", price: 25, image: sample4, category: "Diseño de Personajes" },
+  { id: 5, title: "Cartel Publicitario", artist: "DarkFox17", price: 50, image: sample5, category: "Fan Art" },
+  { id: 6, title: "Pokemon Mudkip", artist: "Zacktnt40", price: 45, image: sample6, category: "Abstracto" },
+  { id: 7, title: "Pokemon Squirtle", artist: "DarkFox17", price: 35, image: sample7, category: "Abstracto" },
+  { id: 8, title: "Spiderman", artist: "Zacktnt40", price: 40, image: sample2, category: "Abstracto" },
 ];
 
 const Index = () => {
